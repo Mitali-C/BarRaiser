@@ -3,7 +3,7 @@ const initialState = "";
 const testReducer = (state = initialState, action) => {
 
   let newState
-  const data = action
+  const data = action.payload
 
   switch (action.type) {
     case 'ADD_DATA':

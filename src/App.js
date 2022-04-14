@@ -1,22 +1,20 @@
 import './App.scss';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
+import { connect } from 'react-redux';
+import { Home } from './components/home/Home';
 
 class App extends React.Component {
   render(){
     return (
-      <Router>
-        <Routes>
-          <Route
-            path='/'
-            element={<div>
-              hello world
-            </div>}
-          />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route
+          path='/'
+          element={<Home></Home>}
+        />
+      </Routes>
     );
   }
 }
 
-export default App;
+export default connect()(App);
