@@ -1,0 +1,13 @@
+#side-bar{
+  min-height: 100vh;
+  background-color: #ebebeb;
+  // position: absolute;
+  width: 10rem;
+  padding: 1rem;
+  .nav-item{
+    cursor: pointer;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+}

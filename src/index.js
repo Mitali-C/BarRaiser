@@ -6,7 +6,6 @@ import rootReducer from './redux/reducers/root'
 import { compose } from 'redux';
 import './index.css';
 import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk'
 import { BrowserRouter as  Router } from 'react-router-dom';
 
@@ -25,4 +24,3 @@ ReactDOM.render(
  </Provider>,
  document.getElementById('root')
 );
-// registerServiceWorker();
